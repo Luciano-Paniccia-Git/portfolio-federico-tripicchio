@@ -1,0 +1,38 @@
+<section id="contacto" class="contact-section">
+  <div class="section-label">
+    <span class="section-num">04</span>
+    <span class="section-title">Contacto</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="contact-wrapper">
+    <div class="contact-copy">
+      <h2 class="contact-title">
+        Construyamos<br>
+        <em>algo juntos.</em>
+      </h2>
+      <p class="contact-sub">
+        Estoy buscando mi primera oportunidad profesional en estudios
+        de arquitectura, diseño de interiores o constructoras.
+        Santa Fe y alrededores.
+      </p>
+    </div>
+
+    <div class="contact-links">
+
+       <a *ngFor="let link of links"
+        [href]="link.href"
+        target="_blank"
+        rel="noopener"
+        class="clink"
+      >
+        <div class="clink-icon">{{ link.icon }}</div>
+        <div class="clink-info">
+          <span class="clink-label">{{ link.label }}</span>
+          <span class="clink-value">{{ link.value }}</span>
+        </div>
+        <span class="clink-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+</section>

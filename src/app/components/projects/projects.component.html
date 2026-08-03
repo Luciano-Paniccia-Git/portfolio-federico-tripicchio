@@ -1,0 +1,66 @@
+<section id="proyectos" class="projects-section">
+  <div class="section-label">
+    <span class="section-num">01</span>
+    <span class="section-title">Proyectos</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="projects-grid">
+    <article
+      *ngFor="let p of projects"
+      class="proj-card"
+      [class.featured]="p.featured"
+    >
+      <div class="carousel">
+        <div class="carousel-img-wrapper">
+          <div class="proj-image">
+            <img
+              *ngIf="p.images.length > 0"
+              [src]="p.images[getIndex(p.id)]"
+              [alt]="p.name"
+              class="proj-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
+            />
+            <div class="img-placeholder">
+              <span>imagen próximamente</span>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-btn prev"
+          (click)="prev(p.id, p.images.length)"
+          *ngIf="p.images.length > 1"
+        >‹</button>
+        <button
+          class="carousel-btn next"
+          (click)="next(p.id, p.images.length)"
+          *ngIf="p.images.length > 1"
+        >›</button>
+
+        <div class="carousel-dots" *ngIf="p.images.length > 1">
+          <span
+            *ngFor="let img of p.images; let i = index"
+            class="dot"
+            [class.active]="i === getIndex(p.id)"
+            (click)="goTo(p.id, i)"
+          ></span>
+        </div>
+      </div>
+
+      <div class="proj-content">
+        <div class="proj-cat">{{ p.category }}</div>
+        <h3 class="proj-name">{{ p.name }}</h3>
+        <p class="proj-desc">{{ p.description }}</p>
+        <div class="proj-tags">
+          <span class="tag" *ngFor="let t of p.tags">{{ t }}</span>
+        </div>
+        <div class="proj-meta">
+          <span>{{ p.year }}</span>
+          <span class="meta-sep">—</span>
+          <span>{{ p.location }}</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>

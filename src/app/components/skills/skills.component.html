@@ -1,0 +1,23 @@
+<section id="skills" class="skills-section">
+  <div class="section-label">
+    <span class="section-num">02</span>
+    <span class="section-title">Habilidades</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-group" *ngFor="let g of groups">
+      <div class="skill-cat-title">{{ g.category }}</div>
+      <div class="skill-item" *ngFor="let s of g.skills">
+        <span class="skill-name">{{ s.name }}</span>
+        <div class="skill-dots">
+          <div
+            class="skill-dot"
+            *ngFor="let d of getDots(s.level)"
+            [class.filled]="d === 1"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+<section id="educacion" class="education-section">
+  <div class="section-label">
+    <span class="section-num">03</span>
+    <span class="section-title">Educación</span>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="edu-timeline">
+    <div class="edu-item" *ngFor="let item of items">
+      <div class="edu-year">{{ item.year }}</div>
+      <div class="edu-content">
+        <h3 class="edu-title">{{ item.title }}</h3>
+        <p class="edu-inst">{{ item.institution }}</p>
+        <p class="edu-desc" *ngIf="item.description">{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

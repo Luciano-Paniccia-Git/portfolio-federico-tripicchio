@@ -1,0 +1,76 @@
+.education-section {
+  padding: 3rem 0;
+}
+
+.edu-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.edu-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.5px;
+  background: var(--border);
+}
+
+.edu-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.5px solid var(--border);
+}
+.edu-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.edu-item::before {
+  content: '';
+  position: absolute;
+  left: -2.22rem;
+  top: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.edu-year {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  padding-top: 2px;
+  text-align: right;
+}
+
+.edu-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.edu-inst {
+  font-size: 12px;
+  color: var(--text-faint);
+  margin-bottom: 6px;
+}
+
+.edu-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .edu-item { grid-template-columns: 1fr; gap: 0.5rem; }
+  .edu-year { text-align: left; }
+}

@@ -1,0 +1,17 @@
+<nav [ngClass]="{ scrolled: isScrolled() }">
+  <div class="nav-inner">
+    <a class="logo" routerLink="/">ft<span>.</span></a>
+    <ul class="nav-links">
+      <li><a (click)="scrollTo($event, 'proyectos')">proyectos</a></li>
+      <li><a (click)="scrollTo($event, 'skills')">skills</a></li>
+      <li><a (click)="scrollTo($event, 'educacion')">educación</a></li>
+      <li><a (click)="scrollTo($event, 'contacto')">contacto</a></li>
+    </ul>
+
+    <a  href="https://www.linkedin.com/in/federico-tripicchio"
+      target="_blank"
+      rel="noopener"
+      class="nav-cta"
+    >LinkedIn ↗</a>
+  </div>
+</nav>
