@@ -20,13 +20,13 @@ export class ContactComponent {
     {
       label: 'LinkedIn',
       value: 'Federico Tripicchio',
-      href: 'https://www.linkedin.com/in/federico-tripicchio',
+      href: 'https://www.linkedin.com/in/federico-tripicchio-4b55752b3/',
       icon: '💼',
     },
     {
       label: 'Instagram',
       value: '@fedetripicchio',
-      href: 'https://www.instagram.com/fedetripicchio',
+      href: 'https://www.instagram.com/fedetripicchio/',
       icon: '📸',
     },
     {
@@ -44,7 +44,7 @@ export class ContactComponent {
     {
       label: 'Teléfono',
       value: '+54 3424296148',
-      href: 'tel:+543424296148',
+      href: 'https://wa.me/5493424296148',
       icon: '📞',
     },
   ];

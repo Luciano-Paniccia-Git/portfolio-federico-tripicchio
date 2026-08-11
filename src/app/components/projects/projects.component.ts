@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgFor, NgClass, NgIf } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 export interface Project {
   id: string;
@@ -17,7 +18,7 @@ export interface Project {
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [NgFor, NgClass, NgIf],
+  imports: [NgFor, NgClass, NgIf, RouterLink],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
@@ -29,12 +30,20 @@ export class ProjectsComponent {
       id: 'edificio-salud',
       category: 'Proyecto Académico',
       name: 'Centro de Especialidades Médicas OSUNL',
-      description: 'Centro de atención médica especializada, formación académica y servicios complementarios en San Luis y Crespo, Santa Fe. Nuevo nodo sanitario e institucional para la ciudad.',
-      longDesc: 'Proyecto académico para el diseño de un Centro de Especialidades Médicas de OSUNL, ubicado en la intersección de San Luis y Crespo, en la ciudad de Santa Fe. La propuesta concentra atención médica especializada, formación académica y servicios complementarios en un único conjunto arquitectónico. La implantación integra una nueva placa sanitaria con construcciones patrimoniales existentes, organizando el proyecto en torno a un patio central que estructura las circulaciones y favorece la iluminación y ventilación natural. Arquitectura contemporánea con hormigón visto, amplias superficies vidriadas y vegetación integrada.',
+      description: 'Centro de atención médica especializada, formación académica y servicios complementarios en San Luis y Crespo, Santa Fe.',
+      longDesc: 'Proyecto académico para el diseño de un Centro de Especialidades Médicas de OSUNL, ubicado en la intersección de San Luis y Crespo, en la ciudad de Santa Fe. La propuesta concentra atención médica especializada, formación académica y servicios complementarios en un único conjunto arquitectónico, consolidando un nuevo nodo sanitario e institucional para la ciudad.',
       tags: ['AutoCAD', 'Revit', 'D5 Render', 'Sketchup', 'Planimetría'],
       year: '2026',
       location: 'San Luis y Crespo, Santa Fe',
-      images: ['images/salud/salud-1.jpg', 'images/salud/salud-2.jpg', 'images/salud/salud-3.jpg', 'images/salud/salud-4.jpg', 'images/salud/salud-5.jpg'],
+      images: [
+        'images/salud/salud-1.jpg',
+        'images/salud/salud-2.jpg',
+        'images/salud/salud-3.jpg',
+        'images/salud/salud-4.jpg',
+        'images/salud/salud-5.jpg',
+        'images/salud/salud-6.jpg',
+        'images/salud/salud-7.jpg',
+      ],
       featured: true,
     },
     {
@@ -45,7 +54,14 @@ export class ProjectsComponent {
       tags: ['Archicad', 'AutoCAD', 'Twinmotion', 'Planimetría'],
       year: '2024',
       location: 'Santa Fe, Argentina',
-      images: ['images/viviendas/viviendas-1.jpg', 'images/viviendas/viviendas-2.jpg'],
+      images: [
+        'images/viviendas/vivienda-1.jpg',
+        'images/viviendas/vivienda-2.jpg',
+        'images/viviendas/vivienda-3.jpg',
+        'images/viviendas/vivienda-4.jpg',
+        'images/viviendas/vivienda-5.jpg',
+        'images/viviendas/vivienda-6.jpg',
+      ],
     },
     {
       id: 'colaboracion-rubio',
@@ -55,7 +71,19 @@ export class ProjectsComponent {
       tags: ['AutoCAD', 'Revit', 'Documentación técnica', 'Planimetría'],
       year: 'Actualidad',
       location: 'Santa Fe, Argentina',
-      images: ['images/rubio/rubio-1.jpg', 'images/rubio/rubio-2.jpg'],
+      images: [
+        'images/rubio/rubio-1.jpg',
+        'images/rubio/rubio-2.jpg',
+        'images/rubio/rubio-3.jpg',
+        'images/rubio/rubio-4.jpg',
+        'images/rubio/rubio-5.jpg',
+        'images/rubio/rubio-6.jpg',
+        'images/rubio/rubio-7.jpg',
+        'images/rubio/rubio-8.jpg',
+        'images/rubio/rubio-9.jpg',
+        'images/rubio/rubio-10.jpg',
+        'images/rubio/rubio-11.jpg',
+      ],
     },
   ];
 
