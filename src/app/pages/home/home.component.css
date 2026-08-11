@@ -44,3 +44,7 @@ main {
   }
   .cv-text { display: none; }
 }
+
+@media (max-width: 768px) {
+  .cv-btn { display: none; }
+}

@@ -59,3 +59,13 @@ nav.scrolled {
 @media (max-width: 600px) {
   .nav-links { display: none; }
 }
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-only {
+    display: inline-block;
+  }
+}

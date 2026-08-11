@@ -142,9 +142,11 @@ h1 em {
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding-top: 8rem;
+    padding: 6rem 1.5rem 3rem;
   }
   .divider-v { display: none; }
   .hero-left { padding-right: 0; margin-bottom: 2rem; }
   .hero-right { padding-left: 0; }
+  .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  h1 { font-size: 2.2rem; }
 }
