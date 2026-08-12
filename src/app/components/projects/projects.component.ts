@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgFor, NgClass, NgIf } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 export interface Project {
   id: string;
@@ -22,70 +23,21 @@ export interface Project {
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
   currentIndex: { [key: string]: number } = {};
+  projects: Project[] = [];
 
-  projects: Project[] = [
-    {
-      id: 'edificio-salud',
-      category: 'Proyecto Académico',
-      name: 'Centro de Especialidades Médicas OSUNL',
-      description: 'Centro de atención médica especializada, formación académica y servicios complementarios en San Luis y Crespo, Santa Fe.',
-      longDesc: 'Proyecto académico para el diseño de un Centro de Especialidades Médicas de OSUNL, ubicado en la intersección de San Luis y Crespo, en la ciudad de Santa Fe. La propuesta concentra atención médica especializada, formación académica y servicios complementarios en un único conjunto arquitectónico, consolidando un nuevo nodo sanitario e institucional para la ciudad.',
-      tags: ['AutoCAD', 'Revit', 'D5 Render', 'Sketchup', 'Planimetría'],
-      year: '2026',
-      location: 'San Luis y Crespo, Santa Fe',
-      images: [
-        'images/salud/salud-1.jpg',
-        'images/salud/salud-2.jpg',
-        'images/salud/salud-3.jpg',
-        'images/salud/salud-4.jpg',
-        'images/salud/salud-5.jpg',
-        'images/salud/salud-6.jpg',
-        'images/salud/salud-7.jpg',
-      ],
-      featured: true,
-    },
-    {
-      id: 'conjunto-viviendas',
-      category: 'Proyecto Académico',
-      name: 'Conjunto de Viviendas',
-      description: 'Diseño de conjunto habitacional con enfoque en integración urbana, espacios comunes y calidad de vida.',
-      tags: ['Archicad', 'AutoCAD', 'Twinmotion', 'Planimetría'],
-      year: '2024',
-      location: 'Santa Fe, Argentina',
-      images: [
-        'images/viviendas/vivienda-1.jpg',
-        'images/viviendas/vivienda-2.jpg',
-        'images/viviendas/vivienda-3.jpg',
-        'images/viviendas/vivienda-4.jpg',
-        'images/viviendas/vivienda-5.jpg',
-        'images/viviendas/vivienda-6.jpg',
-      ],
-    },
-    {
-      id: 'colaboracion-rubio',
-      category: 'Experiencia Profesional',
-      name: 'Colaboración Arq. Rubio',
-      description: 'Asistencia en proyectos reales junto a la Arq. Maria Eugenia Rubio. Documentación técnica, planos y presentaciones.',
-      tags: ['AutoCAD', 'Revit', 'Documentación técnica', 'Planimetría'],
-      year: 'Actualidad',
-      location: 'Santa Fe, Argentina',
-      images: [
-        'images/rubio/rubio-1.jpg',
-        'images/rubio/rubio-2.jpg',
-        'images/rubio/rubio-3.jpg',
-        'images/rubio/rubio-4.jpg',
-        'images/rubio/rubio-5.jpg',
-        'images/rubio/rubio-6.jpg',
-        'images/rubio/rubio-7.jpg',
-        'images/rubio/rubio-8.jpg',
-        'images/rubio/rubio-9.jpg',
-        'images/rubio/rubio-10.jpg',
-        'images/rubio/rubio-11.jpg',
-      ],
-    },
-  ];
+  constructor(private http: HttpClient) {}
+
+  ngOnInit() {
+    const files = ['edificio-salud', 'conjunto-viviendas', 'colaboracion-rubio'];
+    files.forEach(file => {
+      this.http.get<Project>(`/content/proyectos/${file}.json`).subscribe(data => {
+        this.projects.push({ ...data, id: file });
+        this.projects.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+      });
+    });
+  }
 
   getIndex(id: string): number {
     return this.currentIndex[id] ?? 0;

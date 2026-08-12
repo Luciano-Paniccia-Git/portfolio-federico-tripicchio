@@ -1,0 +1,22 @@
+{
+  "name": "Colaboración Arq. Rubio",
+  "category": "Experiencia Profesional",
+  "description": "Asistencia en proyectos reales junto a la Arq. Maria Eugenia Rubio. Desarrollo de documentación técnica, planos y presentaciones profesionales.",
+  "year": "Actualidad",
+  "location": "Santa Fe, Argentina",
+  "tags": ["AutoCAD", "Revit", "Documentación técnica", "Planimetría"],
+  "images": [
+    "images/rubio/rubio-1.jpg",
+    "images/rubio/rubio-2.jpg",
+    "images/rubio/rubio-3.jpg",
+    "images/rubio/rubio-4.jpg",
+    "images/rubio/rubio-5.jpg",
+    "images/rubio/rubio-6.jpg",
+    "images/rubio/rubio-7.jpg",
+    "images/rubio/rubio-8.jpg",
+    "images/rubio/rubio-9.jpg",
+    "images/rubio/rubio-10.jpg",
+    "images/rubio/rubio-11.jpg"
+  ],
+  "featured": false
+}

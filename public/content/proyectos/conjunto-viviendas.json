@@ -1,0 +1,17 @@
+{
+  "name": "Conjunto de Viviendas",
+  "category": "Proyecto Académico",
+  "description": "Diseño de conjunto habitacional con enfoque en la integración urbana, espacios comunes y calidad de vida de los habitantes.",
+  "year": "2024",
+  "location": "Santa Fe, Argentina",
+  "tags": ["Archicad", "AutoCAD", "Twinmotion", "Planimetría"],
+  "images": [
+    "images/viviendas/vivienda-1.jpg",
+    "images/viviendas/vivienda-2.jpg",
+    "images/viviendas/vivienda-3.jpg",
+    "images/viviendas/vivienda-4.jpg",
+    "images/viviendas/vivienda-5.jpg",
+    "images/viviendas/vivienda-6.jpg"
+  ],
+  "featured": false
+}
