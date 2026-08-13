@@ -4,8 +4,46 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Panel de Administración</title>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </head>
 <body>
+  <script>
+    CMS_MANUAL_INIT = true;
+  </script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    CMS.init({
+      config: {
+        backend: {
+          name: 'github',
+          repo: 'Luciano-Paniccia-Git/portfolio-federico-tripicchio',
+          branch: 'main',
+          base_url: 'https://federico-tripicchio.vercel.app',
+          auth_endpoint: '/api/auth'
+        },
+        media_folder: 'public/images/proyectos',
+        public_folder: 'images/proyectos',
+        collections: [
+          {
+            name: 'proyectos',
+            label: 'Proyectos',
+            folder: 'public/content/proyectos',
+            create: true,
+            slug: '{{slug}}',
+            format: 'json',
+            fields: [
+              { label: 'Nombre', name: 'name', widget: 'string' },
+              { label: 'Categoría', name: 'category', widget: 'string' },
+              { label: 'Descripción', name: 'description', widget: 'text' },
+              { label: 'Año', name: 'year', widget: 'string' },
+              { label: 'Ubicación', name: 'location', widget: 'string' },
+              { label: 'Tags', name: 'tags', widget: 'list', field: { label: 'Tag', name: 'tag', widget: 'string' } },
+              { label: 'Imágenes', name: 'images', widget: 'list', field: { label: 'Imagen', name: 'image', widget: 'image' } },
+              { label: 'Destacado', name: 'featured', widget: 'boolean', default: false }
+            ]
+          }
+        ]
+      }
+    });
+  </script>
 </body>
 </html>
