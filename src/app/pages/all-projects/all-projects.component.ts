@@ -19,15 +19,21 @@ export class AllProjectsComponent implements OnInit {
 
   constructor(private http: HttpClient) {}
 
-  ngOnInit() {
-    const files = ['edificio-salud', 'conjunto-viviendas', 'colaboracion-rubio'];
-    files.forEach(file => {
-      this.http.get<Project>(`/content/proyectos/${file}.json`).subscribe(data => {
-        this.projects.push({ ...data, id: file });
+ngOnInit() {
+  const apiUrl = 'https://api.github.com/repos/Luciano-Paniccia-Git/portfolio-federico-tripicchio/contents/public/content/proyectos';
+
+  this.http.get<any[]>(apiUrl).subscribe(files => {
+    const jsonFiles = files.filter(f => f.name.endsWith('.json'));
+
+    jsonFiles.forEach(file => {
+      this.http.get<Project>(`/content/proyectos/${file.name}`).subscribe(data => {
+        const id = file.name.replace('.json', '');
+        this.projects.push({ ...data, id });
         this.projects.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
       });
     });
-  }
+  });
+}
 
   getIndex(id: string): number {
     return this.currentIndex[id] ?? 0;
