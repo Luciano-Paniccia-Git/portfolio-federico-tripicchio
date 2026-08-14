@@ -1,0 +1,14 @@
+{
+  "featured": false,
+  "name": "Quimica quatro",
+  "category": "Experiencia Profesional",
+  "description": "Experiencia Profesional",
+  "year": "2022",
+  "location": "santa fe",
+  "tags": [
+    "AutoCad"
+  ],
+  "images": [
+    "images/proyectos/quimica-quatrro.png"
+  ]
+}
