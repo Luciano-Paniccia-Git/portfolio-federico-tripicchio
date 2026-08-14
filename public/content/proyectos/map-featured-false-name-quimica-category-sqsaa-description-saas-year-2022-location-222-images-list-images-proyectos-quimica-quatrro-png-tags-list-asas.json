@@ -1,0 +1,14 @@
+{
+  "featured": false,
+  "name": "quimica",
+  "category": "sqsaa",
+  "description": "saas",
+  "year": "2022",
+  "location": "222",
+  "images": [
+    "images/proyectos/quimica-quatrro.png"
+  ],
+  "tags": [
+    "asas"
+  ]
+}
