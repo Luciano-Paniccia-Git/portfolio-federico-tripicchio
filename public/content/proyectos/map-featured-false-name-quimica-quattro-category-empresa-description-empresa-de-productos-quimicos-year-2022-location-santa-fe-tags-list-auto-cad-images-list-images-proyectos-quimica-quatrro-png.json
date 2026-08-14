@@ -1,0 +1,14 @@
+{
+  "featured": false,
+  "name": "quimica quattro",
+  "category": "empresa",
+  "description": "empresa de productos quimicos",
+  "year": "2022",
+  "location": "santa fe",
+  "tags": [
+    "auto cad"
+  ],
+  "images": [
+    "images/proyectos/quimica-quatrro.png"
+  ]
+}
