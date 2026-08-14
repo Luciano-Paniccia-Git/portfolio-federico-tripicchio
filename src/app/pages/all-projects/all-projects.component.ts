@@ -23,7 +23,7 @@ ngOnInit() {
   const apiUrl = 'https://api.github.com/repos/Luciano-Paniccia-Git/portfolio-federico-tripicchio/contents/public/content/proyectos';
 
   this.http.get<any[]>(apiUrl).subscribe(files => {
-    const jsonFiles = files.filter(f => f.name.endsWith('.json'));
+    const jsonFiles = files.filter(f => f.name.endsWith('.json') && f.name.length < 50);
 
     jsonFiles.forEach(file => {
       this.http.get<Project>(`/content/proyectos/${file.name}`).subscribe(data => {
