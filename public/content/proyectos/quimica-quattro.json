@@ -1,0 +1,14 @@
+{
+  "featured": false,
+  "id": "quimica-quattro",
+  "name": "Química Quattro",
+  "category": "Experiencia personal",
+  "description": "Desarrollo de página web institucional para empresa de productos químicos de Santa Fe.",
+  "year": "2024",
+  "location": "Santa fe, argentina",
+  "tags": [
+    "astro",
+    "css",
+    "html5"
+  ]
+}
