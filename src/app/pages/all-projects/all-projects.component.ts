@@ -26,9 +26,10 @@ ngOnInit() {
     const jsonFiles = files.filter(f => f.name.endsWith('.json') && f.name.length < 50);
 
     jsonFiles.forEach(file => {
-      this.http.get<Project>(`/content/proyectos/${file.name}`).subscribe(data => {
+      this.http.get<any>(`/content/proyectos/${file.name}`).subscribe(data => {
         const id = file.name.replace('.json', '');
-        this.projects.push({ ...data, id });
+        const { id: _, ...rest } = data;
+        this.projects.push({ ...rest, id });
         this.projects.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
       });
     });
