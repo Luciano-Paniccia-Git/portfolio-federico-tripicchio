@@ -1,10 +1,7 @@
 {
   "name": "Centro de Especialidades Médicas OSUNL",
-  "category": "Proyecto Académico",
-  "description": "Centro de atención médica especializada, formación académica y servicios complementarios en San Luis y Crespo, Santa Fe.",
-  "year": "2026",
+  "featured": true,
   "location": "San Luis y Crespo, Santa Fe",
-  "tags": ["AutoCAD", "Revit", "D5 Render", "Sketchup", "Planimetría"],
   "images": [
     "images/salud/salud-1.jpg",
     "images/salud/salud-2.jpg",
@@ -14,5 +11,15 @@
     "images/salud/salud-6.jpg",
     "images/salud/salud-7.jpg"
   ],
-  "featured": true
+  "tags": [
+    "AutoCAD",
+    "Revit",
+    "D5 Render",
+    "Sketchup",
+    "Planimetría"
+  ],
+  "id": "Salud",
+  "description": "Centro de atención médica especializada, formación académica y servicios complementarios en San Luis y Crespo, Santa Fe.",
+  "year": "2026",
+  "category": "Proyecto Académico"
 }
