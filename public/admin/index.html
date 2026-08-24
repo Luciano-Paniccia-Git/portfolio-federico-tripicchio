@@ -41,7 +41,20 @@
               { label: 'Año', name: 'year', widget: 'string' },
               { label: 'Ubicación', name: 'location', widget: 'string' },
               { label: 'Tags', name: 'tags', widget: 'list', field: { label: 'Tag', name: 'tag', widget: 'string' } },
-              { label: 'Imágenes', name: 'images', widget: 'list', field: { label: 'Imagen', name: 'image', widget: 'image' } },
+              { label: 'Imágenes principales', name: 'images', widget: 'list', field: { label: 'Imagen', name: 'image', widget: 'image' } },
+              {
+                label: 'Subproyectos',
+                name: 'subprojects',
+                widget: 'list',
+                required: false,
+                fields: [
+                  { label: 'Nombre', name: 'name', widget: 'string' },
+                  { label: 'Descripción', name: 'description', widget: 'text' },
+                  { label: 'Año', name: 'year', widget: 'string' },
+                  { label: 'Tags', name: 'tags', widget: 'list', field: { label: 'Tag', name: 'tag', widget: 'string' } },
+                  { label: 'Imágenes', name: 'images', widget: 'list', field: { label: 'Imagen', name: 'image', widget: 'image' } }
+                ]
+              },
               { label: 'Destacado', name: 'featured', widget: 'boolean', default: false }
             ]
           }
