@@ -14,6 +14,9 @@ export interface Project {
   location: string;
   images: string[];
   featured?: boolean;
+  accentColor?: string;
+  isHighlight?: boolean;
+  subprojects?: any[];
 }
 
 @Component({

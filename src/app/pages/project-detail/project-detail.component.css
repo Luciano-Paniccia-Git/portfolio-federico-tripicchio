@@ -1,0 +1,226 @@
+.detail-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8rem 2.5rem 4rem;
+}
+
+.back-link {
+  margin-bottom: 2rem;
+}
+.back-link a {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.back-link a:hover { opacity: 0.7; }
+
+.detail-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  margin-bottom: 4rem;
+}
+
+.carousel {
+  position: relative;
+}
+
+.detail-img {
+  aspect-ratio: 4/3;
+  background: var(--bg-card);
+  overflow: hidden;
+  position: relative;
+}
+
+.proj-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(20,18,16,0.7);
+  border: 0.5px solid var(--border);
+  color: var(--text-primary);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.2s;
+  z-index: 2;
+}
+.carousel-btn:hover { background: rgba(196,149,106,0.3); }
+.carousel-btn.prev { left: 8px; }
+.carousel-btn.next { right: 8px; }
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 0;
+  background: var(--bg-base);
+}
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--text-faint);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.dot.active { background: var(--gold); }
+
+.detail-info {
+  background: var(--bg-base);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.detail-cat {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.detail-title {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.detail-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.detail-meta {
+  font-size: 11px;
+  color: var(--text-faint);
+  display: flex;
+  gap: 6px;
+}
+.meta-sep { color: var(--gold); }
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/* SUBPROYECTOS */
+.subprojects-section { margin-top: 2rem; }
+
+.section-label {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.section-num {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--text-faint);
+}
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: var(--text-primary);
+}
+.section-line {
+  flex: 1;
+  height: 0.5px;
+  background: var(--border);
+}
+
+.subprojects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+}
+
+.subproject-card {
+  background: var(--bg-base);
+  transition: background 0.2s;
+}
+.subproject-card:hover { background: var(--bg-card-hover); }
+
+.sub-carousel { position: relative; }
+
+.sub-img {
+  aspect-ratio: 16/10;
+  background: var(--bg-card);
+  overflow: hidden;
+  position: relative;
+}
+
+.img-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-placeholder span {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.sub-content {
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sub-name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.sub-desc {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.sub-meta {
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+.sub-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .detail-hero { grid-template-columns: 1fr; }
+  .subprojects-grid { grid-template-columns: 1fr; }
+  .detail-main { padding: 6rem 1.5rem 3rem; }
+}

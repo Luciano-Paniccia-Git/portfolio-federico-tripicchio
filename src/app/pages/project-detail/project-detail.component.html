@@ -1,0 +1,91 @@
+<app-navbar />
+
+<main class="detail-main" *ngIf="project">
+  <div class="back-link">
+    <a routerLink="/proyectos">← volver a proyectos</a>
+  </div>
+
+  <div class="detail-hero">
+    <div class="carousel" *ngIf="project.images && project.images.length > 0">
+      <div class="detail-img">
+        <img
+          [src]="project.images[getIndex('main')]"
+          [alt]="project.name"
+          class="proj-img"
+          onerror="this.style.display='none'"
+        />
+      </div>
+      <button class="carousel-btn prev" (click)="prev('main', project.images.length)" *ngIf="project.images.length > 1">‹</button>
+      <button class="carousel-btn next" (click)="next('main', project.images.length)" *ngIf="project.images.length > 1">›</button>
+      <div class="carousel-dots" *ngIf="project.images.length > 1">
+        <span
+          *ngFor="let img of project.images; let i = index"
+          class="dot"
+          [class.active]="i === getIndex('main')"
+          (click)="goTo('main', i)"
+        ></span>
+      </div>
+    </div>
+
+    <div class="detail-info">
+      <div class="detail-cat">{{ project.category }}</div>
+      <h1 class="detail-title">{{ project.name }}</h1>
+      <p class="detail-desc">{{ project.description }}</p>
+      <div class="detail-meta">
+        <span>{{ project.year }}</span>
+        <span class="meta-sep">—</span>
+        <span>{{ project.location }}</span>
+      </div>
+      <div class="detail-tags">
+        <span class="tag" *ngFor="let t of project.tags">{{ t }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="subprojects-section" *ngIf="project.subprojects && project.subprojects.length > 0">
+    <div class="section-label">
+      <span class="section-num">—</span>
+      <span class="section-title">Proyectos incluidos</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="subprojects-grid">
+      <div class="subproject-card" *ngFor="let sub of project.subprojects; let i = index">
+        <div class="sub-carousel">
+          <div class="sub-img">
+            <img
+              *ngIf="sub.images && sub.images.length > 0"
+              [src]="sub.images[getIndex('sub-' + i)]"
+              [alt]="sub.name"
+              class="proj-img"
+              onerror="this.style.display='none'"
+            />
+            <div class="img-placeholder" *ngIf="!sub.images || sub.images.length === 0">
+              <span>imagen próximamente</span>
+            </div>
+          </div>
+          <button class="carousel-btn prev" (click)="prev('sub-' + i, sub.images.length)" *ngIf="sub.images && sub.images.length > 1">‹</button>
+          <button class="carousel-btn next" (click)="next('sub-' + i, sub.images.length)" *ngIf="sub.images && sub.images.length > 1">›</button>
+          <div class="carousel-dots" *ngIf="sub.images && sub.images.length > 1">
+            <span
+              *ngFor="let img of sub.images; let j = index"
+              class="dot"
+              [class.active]="j === getIndex('sub-' + i)"
+              (click)="goTo('sub-' + i, j)"
+            ></span>
+          </div>
+        </div>
+        <div class="sub-content">
+          <h3 class="sub-name">{{ sub.name }}</h3>
+          <p class="sub-desc">{{ sub.description }}</p>
+          <div class="sub-meta">{{ sub.year }}</div>
+          <div class="sub-tags">
+            <span class="tag" *ngFor="let t of sub.tags">{{ t }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<app-footer />

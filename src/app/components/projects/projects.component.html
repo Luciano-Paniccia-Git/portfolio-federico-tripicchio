@@ -9,41 +9,41 @@
     <article
       *ngFor="let p of projects"
       class="proj-card"
-      [class.featured]="p.featured"
+      [ngClass]="p.featured ? 'highlight' : ''"
+      [routerLink]="['/proyectos', p.id]"
+      style="cursor: pointer;"
     >
       <div class="carousel">
-        <div class="carousel-img-wrapper">
-          <div class="proj-image">
-            <img
-              *ngIf="p.images.length > 0"
-              [src]="p.images[getIndex(p.id)]"
-              [alt]="p.name"
-              class="proj-img"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
-            />
-            <div class="img-placeholder">
-              <span>imagen próximamente</span>
-            </div>
+        <div class="proj-image">
+          <img
+            *ngIf="p.images && p.images.length > 0"
+            [src]="p.images[getIndex(p.id)]"
+            [alt]="p.name"
+            class="proj-img"
+            onerror="this.style.display='none'"
+          />
+          <div class="img-placeholder" *ngIf="!p.images || p.images.length === 0">
+            <span>imagen próximamente</span>
           </div>
         </div>
 
         <button
           class="carousel-btn prev"
-          (click)="prev(p.id, p.images.length)"
-          *ngIf="p.images.length > 1"
+          (click)="prev(p.id, p.images.length); $event.stopPropagation()"
+          *ngIf="p.images && p.images.length > 1"
         >‹</button>
         <button
           class="carousel-btn next"
-          (click)="next(p.id, p.images.length)"
-          *ngIf="p.images.length > 1"
+          (click)="next(p.id, p.images.length); $event.stopPropagation()"
+          *ngIf="p.images && p.images.length > 1"
         >›</button>
 
-        <div class="carousel-dots" *ngIf="p.images.length > 1">
+        <div class="carousel-dots" *ngIf="p.images && p.images.length > 1">
           <span
             *ngFor="let img of p.images; let i = index"
             class="dot"
             [class.active]="i === getIndex(p.id)"
-            (click)="goTo(p.id, i)"
+            (click)="goTo(p.id, i); $event.stopPropagation()"
           ></span>
         </div>
       </div>
@@ -53,14 +53,19 @@
         <h3 class="proj-name">{{ p.name }}</h3>
         <p class="proj-desc">{{ p.description }}</p>
         <div class="proj-tags">
-          <span class="tag" *ngFor="let t of p.tags">{{ t }}</span>
+          <span class="pill" *ngFor="let t of p.tags">{{ t }}</span>
         </div>
         <div class="proj-meta">
           <span>{{ p.year }}</span>
           <span class="meta-sep">—</span>
           <span>{{ p.location }}</span>
         </div>
+        <div class="proj-link">Ver proyecto ↗</div>
       </div>
     </article>
+  </div>
+
+  <div class="ver-mas">
+    <a routerLink="/proyectos" class="btn-ver-mas">Ver todos los proyectos ↗</a>
   </div>
 </section>

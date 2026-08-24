@@ -86,6 +86,22 @@
 .carousel-btn.prev { left: 8px; }
 .carousel-btn.next { right: 8px; }
 
+.btn-ver-mas {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s;
+}
+
+.btn-ver-mas:hover {
+  gap: 10px;
+}
+
 .carousel-dots {
   display: flex;
   justify-content: center;
@@ -139,6 +155,22 @@
   letter-spacing: 0.04em;
   display: flex;
   gap: 6px;
+}
+
+.proj-link {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s;
+}
+
+.proj-card:hover .proj-link {
+  gap: 10px;
 }
 .meta-sep { color: var(--gold); }
 

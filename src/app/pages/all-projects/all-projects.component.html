@@ -1,1 +1,60 @@
-<p>all-projects works!</p>
+<app-navbar />
+
+<main class="all-projects-main">
+  <div class="page-header">
+    <a routerLink="/" class="back-link">← volver</a>
+    <h1 class="page-title">Todos los <em>proyectos</em></h1>
+    <p class="page-sub">Arquitectura, diseño de interiores y experiencia profesional.</p>
+  </div>
+
+  <div class="projects-list">
+    <article
+      *ngFor="let p of projects"
+      class="proj-item"
+      [routerLink]="['/proyectos', p.id]"
+      style="cursor: pointer;"
+    >
+      <div class="carousel">
+        <div class="proj-image">
+          <img
+            *ngIf="p.images && p.images.length > 0"
+            [src]="p.images[getIndex(p.id)]"
+            [alt]="p.name"
+            class="proj-img"
+            onerror="this.style.display='none'"
+          />
+          <div class="img-placeholder" *ngIf="!p.images || p.images.length === 0">
+            <span>imagen próximamente</span>
+          </div>
+        </div>
+        <button class="carousel-btn prev" (click)="prev(p.id, p.images.length); $event.stopPropagation()" *ngIf="p.images && p.images.length > 1">‹</button>
+        <button class="carousel-btn next" (click)="next(p.id, p.images.length); $event.stopPropagation()" *ngIf="p.images && p.images.length > 1">›</button>
+        <div class="carousel-dots" *ngIf="p.images && p.images.length > 1">
+          <span
+            *ngFor="let img of p.images; let i = index"
+            class="dot"
+            [class.active]="i === getIndex(p.id)"
+            (click)="goTo(p.id, i); $event.stopPropagation()"
+          ></span>
+        </div>
+      </div>
+
+      <div class="proj-content">
+        <div class="proj-cat">{{ p.category }}</div>
+        <h2 class="proj-name">{{ p.name }}</h2>
+        <p class="proj-desc">{{ p.description }}</p>
+        <div class="proj-tags">
+          <span class="tag" *ngFor="let t of p.tags">{{ t }}</span>
+        </div>
+        <div class="proj-meta">
+          <span>{{ p.year }}</span>
+          <span class="meta-sep">—</span>
+          <span>{{ p.location }}</span>
+        </div>
+        <div class="proj-link">Ver proyecto ↗</div>
+      </div>
+    </article>
+  </div>
+</main>
+
+<app-footer />
