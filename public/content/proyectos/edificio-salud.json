@@ -61,6 +61,27 @@
         "images/proyectos/fachada-sur-calle-crespo-1-.png",
         "images/proyectos/fachada-sur-calle-crespo-2-.png"
       ]
+    },
+    {
+      "name": "Visualización arquitectónica",
+      "description": "Visualización arquitectónica del proyecto, enfocada en comunicar su espacialidad, materialidad y atmósfera. Las imágenes representan los principales espacios interiores y exteriores, permitiendo comprender la experiencia del edificio y su relación con el entorno.",
+      "year": "2026",
+      "tags": [
+        "Architectural Visualization",
+        "3D Rendering",
+        "Healthcare Architecture",
+        "Interior & Exterior Visualization"
+      ],
+      "images": [
+        "images/proyectos/imagen-portada.png",
+        "images/proyectos/fachada-crespo-ps.png",
+        "images/proyectos/fachada-san-luis-ps.png",
+        "images/proyectos/imagen-hall-ps.png",
+        "images/proyectos/imagen-primer-piso-ps.png",
+        "images/proyectos/imagen-segundo-piso-ps.png",
+        "images/proyectos/imagen-piso-de-transicion-ps.png",
+        "images/proyectos/piso-pasillo-hotel-ps.png"
+      ]
     }
   ],
   "id": "Salud",
