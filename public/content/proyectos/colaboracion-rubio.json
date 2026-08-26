@@ -26,7 +26,11 @@
       "images": [
         "images/proyectos/fachada-ps.png",
         "images/proyectos/fachada-lateral-ps.png",
-        "images/proyectos/contra-late-ps.png"
+        "images/proyectos/contrafachada-ps.png",
+        "images/proyectos/contra-late-ps.png",
+        "images/proyectos/galeria-ps.png",
+        "images/proyectos/escalera-ps.png",
+        "images/proyectos/living-ps.png"
       ]
     }
   ],
