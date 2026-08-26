@@ -75,6 +75,25 @@
         "images/proyectos/escalera-ps.png",
         "images/proyectos/living-ps.png"
       ]
+    },
+    {
+      "images": [
+        "images/proyectos/chatgpt-image-26-ago-2026-11_17_06.png",
+        "images/proyectos/chatgpt-image-26-ago-2026-11_20_32.png",
+        "images/proyectos/chatgpt-image-26-ago-2026-11_17_10.png",
+        "images/proyectos/chatgpt-image-26-ago-2026-11_20_40.png",
+        "images/proyectos/chatgpt-image-26-ago-2026-11_17_50.png",
+        "images/proyectos/chatgpt-image-26-ago-2026-11_20_36.png"
+      ],
+      "name": "Vivienda unifamiliar — Barrio Privado \"Cielo de Santomás\"",
+      "description": "Visualización arquitectónica de vivienda unifamiliar desarrollada en colaboración con la Arq. María Eugenia Rubio. El trabajo incluyó la producción de renders exteriores e interiores a partir del proyecto arquitectónico, representando los espacios, la materialidad y la relación entre las áreas interiores y exteriores de la vivienda.",
+      "year": "2025",
+      "tags": [
+        "Architectural Visualization",
+        "Residential Design",
+        "ArchiCad",
+        "3D Rendering"
+      ]
     }
   ],
   "id": "Rubio",
