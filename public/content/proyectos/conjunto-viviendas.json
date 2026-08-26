@@ -3,7 +3,7 @@
   "featured": false,
   "location": "Santa Fe, Argentina",
   "images": [
-    "images/proyectos/fachada-ps.png",
+    "images/proyectos/fachada-ps-t.png",
     "images/proyectos/para-tik-tok-01.png",
     "images/proyectos/servidumbre-de-paso-ps.png",
     "images/proyectos/axonometria-seccionada-planta-baja_page-0001.jpg",
@@ -26,6 +26,32 @@
     "AutoCAD",
     "Twinmotion",
     "Planimetría"
+  ],
+  "subprojects": [
+    {
+      "name": "Desarrollo y representación arquitectónica",
+      "description": "Desarrollo y representación arquitectónica de un conjunto de viviendas a partir de un diseño previamente definido. El trabajo se centró en el modelado en Revit y en la elaboración de plantas y axonometrías seccionadas para comunicar la organización espacial y las relaciones entre las distintas unidades del conjunto.",
+      "year": "2024",
+      "tags": [
+        "Revit",
+        "Architectural Drawings",
+        "Sectional Axonometric",
+        "Housing"
+      ],
+      "images": [
+        "images/proyectos/axonometria-conjunto-ph.png",
+        "images/proyectos/para-tik-tok-01.png",
+        "images/proyectos/axonometria-seccionada-planta-baja_page-0001.jpg",
+        "images/proyectos/para-tik-tok-03.png",
+        "images/proyectos/axonometria-seccionada-planta-alta_page-0001.jpg",
+        "images/proyectos/para-tik-tok-04.png",
+        "images/proyectos/axonometria-seccionada-piso-3_page-0001.jpg",
+        "images/proyectos/para-tik-tok-05.png",
+        "images/proyectos/axonometria-seccionada-piso-8.pdf.png",
+        "images/proyectos/para-tik-tok-06.png",
+        "images/proyectos/para-tik-tok-02.png"
+      ]
+    }
   ],
   "id": "Viviendas",
   "description": "Diseño de conjunto habitacional con enfoque en la integración urbana, espacios comunes y calidad de vida de los habitantes.",
