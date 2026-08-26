@@ -96,6 +96,27 @@
         "ArchiCad",
         "3D Rendering"
       ]
+    },
+    {
+      "name": "Vivienda unifamiliar - Barrio Privado \"Cielo de Santomás\"",
+      "description": "Visualización arquitectónica de vivienda unifamiliar ubicada en La Reserva, desarrollada en colaboración con la Arq. María Eugenia Rubio. El trabajo incluyó la producción de renders exteriores e interiores a partir del proyecto arquitectónico, representando la materialidad, los espacios de la vivienda y su relación con las áreas exteriores.",
+      "year": "2026",
+      "tags": [
+        "Architectural Visualization",
+        "3D Rendering",
+        "Residential Architecture",
+        "Interior & Exterior Visualization"
+      ],
+      "images": [
+        "images/proyectos/fachada-ps-1.png",
+        "images/proyectos/fachada-noche-ps.png",
+        "images/proyectos/galeria-4-ps.png",
+        "images/proyectos/galeria-2-ps.png",
+        "images/proyectos/galeria-ps-2.png",
+        "images/proyectos/living-ps-2.png",
+        "images/proyectos/living-comedor-ps.png",
+        "images/proyectos/living-comedor-2-ps.png"
+      ]
     }
   ],
   "id": "Rubio",
