@@ -14,27 +14,6 @@
   ],
   "subprojects": [
     {
-      "description": "Visualización arquitectónica desarrollada para un cliente particular, a partir de un proyecto de vivienda unifamiliar de la Arq. Marita Rubio. El trabajo incluyó la producción de renders interiores y exteriores, con foco en la representación realista de la arquitectura, los materiales, la iluminación y la espacialidad del proyecto.\n",
-      "name": "Visualización arquitectonica - \"Country El Pinar\"",
-      "year": "2025",
-      "tags": [
-        "Architectural Visualization",
-        "3D Rendering",
-        "3D Modeling",
-        "Single-Family Residence",
-        "Interior & Exterior"
-      ],
-      "images": [
-        "images/proyectos/fachada-ps.png",
-        "images/proyectos/fachada-lateral-ps.png",
-        "images/proyectos/contrafachada-ps.png",
-        "images/proyectos/contra-late-ps.png",
-        "images/proyectos/galeria-ps.png",
-        "images/proyectos/escalera-ps.png",
-        "images/proyectos/living-ps.png"
-      ]
-    },
-    {
       "description": "Desarrollo de propuestas de diseño para el local gastronómico Prote & Co., realizado en colaboración con la Arq. Marita Rubio. El trabajo comprendió el desarrollo y evolución de distintas alternativas, incorporando ajustes de distribución, equipamiento, materialidad e identidad visual, junto con la producción de visualizaciones arquitectónicas para comunicar la propuesta.",
       "year": "2026",
       "tags": [
@@ -54,10 +33,31 @@
         "images/proyectos/laminas-b_mesa-de-trabajo-1-copia-7.png"
       ],
       "name": "Prote & Co. — Local gastronómico"
+    },
+    {
+      "description": "Visualización arquitectónica desarrollada para un cliente particular, a partir de un proyecto de vivienda unifamiliar de la Arq. Marita Rubio. El trabajo incluyó la producción de renders interiores y exteriores, con foco en la representación realista de la arquitectura, los materiales, la iluminación y la espacialidad del proyecto.\n",
+      "name": "Visualización arquitectonica - \"Country El Pinar\"",
+      "year": "2025",
+      "tags": [
+        "Architectural Visualization",
+        "3D Rendering",
+        "3D Modeling",
+        "Single-Family Residence",
+        "Interior & Exterior"
+      ],
+      "images": [
+        "images/proyectos/fachada-ps.png",
+        "images/proyectos/fachada-lateral-ps.png",
+        "images/proyectos/contrafachada-ps.png",
+        "images/proyectos/contra-late-ps.png",
+        "images/proyectos/galeria-ps.png",
+        "images/proyectos/escalera-ps.png",
+        "images/proyectos/living-ps.png"
+      ]
     }
   ],
   "id": "Rubio",
-  "description": "Asistencia en proyectos reales junto a la Arq. Maria Eugenia Rubio. Desarrollo de documentación técnica, planos y presentaciones profesionales.",
+  "description": "Colaboración profesional junto a la Arq. María Eugenia Rubio en proyectos reales para distintos clientes, participando en reuniones y seguimiento de proyectos, instancias de diseño, documentación técnica, modelado y visualización arquitectónica, elaboración de planos y presentaciones, además de asistencia y seguimiento en obra.",
   "year": "Actualidad",
   "category": "Experiencia Profesional"
 }
