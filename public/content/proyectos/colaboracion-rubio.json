@@ -33,6 +33,27 @@
         "images/proyectos/escalera-ps.png",
         "images/proyectos/living-ps.png"
       ]
+    },
+    {
+      "description": "Desarrollo de propuestas de diseño para el local gastronómico Prote & Co., realizado en colaboración con la Arq. Marita Rubio. El trabajo comprendió el desarrollo y evolución de distintas alternativas, incorporando ajustes de distribución, equipamiento, materialidad e identidad visual, junto con la producción de visualizaciones arquitectónicas para comunicar la propuesta.",
+      "year": "2026",
+      "tags": [
+        "Commercial Design",
+        "Interior Design",
+        "3D Rendering",
+        "Revit"
+      ],
+      "images": [
+        "images/proyectos/modificacion_mesa-de-trabajo-1-copia-6.png",
+        "images/proyectos/laminas_mesa-de-trabajo-1-copia-4.png",
+        "images/proyectos/laminas_mesa-de-trabajo-1.png",
+        "images/proyectos/laminas_mesa-de-trabajo-1-copia.png",
+        "images/proyectos/laminas_mesa-de-trabajo-1-copia-2.png",
+        "images/proyectos/laminas-b_mesa-de-trabajo-1-copia-5.png",
+        "images/proyectos/laminas-b_mesa-de-trabajo-1-copia-3.png",
+        "images/proyectos/laminas-b_mesa-de-trabajo-1-copia-7.png"
+      ],
+      "name": "Prote & Co. — Local gastronómico"
     }
   ],
   "id": "Rubio",
