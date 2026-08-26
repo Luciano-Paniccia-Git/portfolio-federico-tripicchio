@@ -3,23 +3,32 @@
   "featured": false,
   "location": "Santa Fe, Argentina",
   "images": [
-    "images/rubio/rubio-1.jpg",
-    "images/rubio/rubio-2.jpg",
-    "images/rubio/rubio-3.jpg",
-    "images/rubio/rubio-4.jpg",
-    "images/rubio/rubio-5.jpg",
-    "images/rubio/rubio-6.jpg",
-    "images/rubio/rubio-7.jpg",
-    "images/rubio/rubio-8.jpg",
-    "images/rubio/rubio-9.jpg",
-    "images/rubio/rubio-10.jpg",
-    "images/rubio/rubio-11.jpg"
+    "images/proyectos/fachada-ps.png"
   ],
   "tags": [
     "AutoCAD",
     "Revit",
     "Documentación técnica",
     "Planimetría"
+  ],
+  "subprojects": [
+    {
+      "description": "Visualización arquitectónica desarrollada para un cliente particular, a partir de un proyecto de vivienda unifamiliar de la Arq. Marita Rubio. El trabajo incluyó la producción de renders interiores y exteriores, con foco en la representación realista de la arquitectura, los materiales, la iluminación y la espacialidad del proyecto.\n",
+      "name": "Visualización arquitectonica - \"Country El Pinar\"",
+      "year": "2025",
+      "tags": [
+        "Architectural Visualization",
+        "3D Rendering",
+        "3D Modeling",
+        "Single-Family Residence",
+        "Interior & Exterior"
+      ],
+      "images": [
+        "images/proyectos/fachada-ps.png",
+        "images/proyectos/fachada-lateral-ps.png",
+        "images/proyectos/contra-late-ps.png"
+      ]
+    }
   ],
   "id": "Rubio",
   "description": "Asistencia en proyectos reales junto a la Arq. Maria Eugenia Rubio. Desarrollo de documentación técnica, planos y presentaciones profesionales.",
