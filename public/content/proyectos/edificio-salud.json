@@ -20,9 +20,7 @@
     "images/proyectos/planos-08.png",
     "images/salud/salud-7.jpg",
     "images/proyectos/cortes_mesa-de-trabajo-1.png",
-    "images/proyectos/cortes-02.png",
-    "images/proyectos/cortes-perspectivado-e-o.png",
-    "images/proyectos/cortes-perspectivado-n-s.png"
+    "images/proyectos/cortes-perspectivado-e-o.png"
   ],
   "tags": [
     "AutoCAD",
@@ -30,6 +28,27 @@
     "D5 Render",
     "Sketchup",
     "Planimetría"
+  ],
+  "subprojects": [
+    {
+      "name": "Concepto y estrategias de diseño",
+      "year": "2026",
+      "tags": [
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "SketchUp",
+        "Revit"
+      ],
+      "images": [
+        "images/proyectos/esquema-entorno-01.png",
+        "images/proyectos/esquema-axo-01.jpg",
+        "images/proyectos/diseño-sin-título.png",
+        "images/proyectos/whatsapp-image-2026-08-26-at-3.29.43-pm-2.jpeg",
+        "images/proyectos/whatsapp-image-2026-08-26-at-3.29.43-pm.jpeg",
+        "images/proyectos/whatsapp-image-2026-08-26-at-3.29.07-pm.jpeg"
+      ],
+      "description": "Desarrollo conceptual del proyecto a partir del análisis funcional, espacial y programático. Los esquemas exploran la organización de usos, circulaciones, accesos y relaciones entre áreas, estableciendo las estrategias que estructuran la propuesta arquitectónica."
+    }
   ],
   "id": "Salud",
   "description": "Centro de atención médica especializada, formación académica y servicios complementarios en San Luis y Crespo, Santa Fe.",
