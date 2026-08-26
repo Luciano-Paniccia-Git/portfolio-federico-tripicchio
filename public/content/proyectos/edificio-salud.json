@@ -34,6 +34,33 @@
         "images/proyectos/whatsapp-image-2026-08-26-at-3.29.07-pm.jpeg"
       ],
       "description": "Desarrollo conceptual del proyecto a partir del análisis funcional, espacial y programático. Los esquemas exploran la organización de usos, circulaciones, accesos y relaciones entre áreas, estableciendo las estrategias que estructuran la propuesta arquitectónica."
+    },
+    {
+      "name": "Planimetría y desarrollo arquitectónico",
+      "description": "Desarrollo arquitectónico y documentación gráfica del proyecto, abordando la organización funcional, espacial y constructiva mediante plantas, cortes y fachadas. La planimetría permite comprender la resolución del programa, las circulaciones y las relaciones entre los distintos sectores del conjunto.",
+      "year": "2026",
+      "tags": [
+        "Architectural Drawings",
+        "Revit",
+        "Sections",
+        "Elevations"
+      ],
+      "images": [
+        "images/proyectos/planos-02.png",
+        "images/proyectos/planos_mesa-de-trabajo-1.png",
+        "images/proyectos/planos-03.png",
+        "images/proyectos/planos-05.png",
+        "images/proyectos/planos-06.png",
+        "images/proyectos/planos-04.png",
+        "images/proyectos/planos-07.png",
+        "images/proyectos/planos-08.png",
+        "images/proyectos/cortes_mesa-de-trabajo-1.png",
+        "images/proyectos/cortes-02.png",
+        "images/proyectos/cortes-perspectivado-n-s.png",
+        "images/proyectos/cortes-perspectivado-e-o.png",
+        "images/proyectos/fachada-sur-calle-crespo-1-.png",
+        "images/proyectos/fachada-sur-calle-crespo-2-.png"
+      ]
     }
   ],
   "id": "Salud",
