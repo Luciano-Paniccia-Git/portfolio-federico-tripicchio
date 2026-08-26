@@ -51,6 +51,26 @@
         "images/proyectos/para-tik-tok-06.png",
         "images/proyectos/para-tik-tok-02.png"
       ]
+    },
+    {
+      "name": "Visualización arquitectónica",
+      "description": "Desarrollo de visualizaciones arquitectónicas del conjunto de viviendas, enfocadas en representar la materialidad, la espacialidad y la relación entre las unidades, los espacios comunes y su entorno.",
+      "year": "2024",
+      "tags": [
+        "3D Rendering",
+        "Exterior Visualization",
+        "D5 rendering"
+      ],
+      "images": [
+        "images/proyectos/fachada-ps-t.png",
+        "images/proyectos/servidumbre-de-paso-ps.png",
+        "images/proyectos/render-patio-trasero-ps.png",
+        "images/proyectos/galeria-ps-t.png",
+        "images/proyectos/render-bar-interior-planta-baja-ps.png",
+        "images/proyectos/pasillpos-altos-ps.png",
+        "images/proyectos/pasillo-primer-piso-ps.png",
+        "images/proyectos/render-bar-interior-ps.png"
+      ]
     }
   ],
   "id": "Viviendas",
