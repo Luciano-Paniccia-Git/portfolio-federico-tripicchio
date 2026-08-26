@@ -54,6 +54,20 @@
         "images/proyectos/escalera-ps.png",
         "images/proyectos/living-ps.png"
       ]
+    },
+    {
+      "images": [
+        "images/proyectos/adjadmuniinstalaciones2025.pdf.png"
+      ],
+      "tags": [
+        "MEP Drawings",
+        "Installation Plans",
+        "3D Rendering",
+        "ArchiCad"
+      ],
+      "year": "2025",
+      "description": "Desarrollo de documentación técnica de instalaciones y visualización arquitectónica para una vivienda unifamiliar ubicada en el Country La Reserva, Santa Fe. El trabajo incluyó la elaboración de planos técnicos y la producción de renders interiores y exteriores, abordando tanto la resolución técnica como la representación visual del proyecto.",
+      "name": "Vivienda unifamiliar — La Reserva"
     }
   ],
   "id": "Rubio",
