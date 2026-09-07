@@ -39,6 +39,26 @@
       "name": "Prote & Co. — Local gastronómico"
     },
     {
+      "name": "Ampliación Residencial - Barrio Privado \"Aires del Llano\"",
+      "description": "Proyecto de ampliación de una vivienda existente mediante la incorporación de un nuevo espacio social. La propuesta integra áreas de encuentro, comedor, living y parrilla, priorizando la relación con el exterior, la iluminación natural y la continuidad entre los distintos sectores.",
+      "year": "2026",
+      "tags": [
+        "Residential Architecture",
+        "Architectural Visualizatio",
+        "3D Rendering",
+        "Interior Design"
+      ],
+      "images": [
+        "images/proyectos/fachada-ps-6.png",
+        "images/proyectos/propuesta-a_page-0001.jpg",
+        "images/proyectos/fachda-2-ps.png",
+        "images/proyectos/interior-ps.png",
+        "images/proyectos/interior-2-ps.png",
+        "images/proyectos/interior-3-ps.png",
+        "images/proyectos/interior-4-ps.png"
+      ]
+    },
+    {
       "name": "Vivienda unifamiliar - Barrio Privado \"Cielo de Santomás\"",
       "description": "Visualización arquitectónica de vivienda unifamiliar ubicada en La Reserva, desarrollada en colaboración con la Arq. María Eugenia Rubio. El trabajo incluyó la producción de renders exteriores e interiores a partir del proyecto arquitectónico, representando la materialidad, los espacios de la vivienda y su relación con las áreas exteriores.",
       "year": "2026",
@@ -118,26 +138,6 @@
         "Residential Design",
         "ArchiCad",
         "3D Rendering"
-      ]
-    },
-    {
-      "name": "Ampliación Residencial - Barrio Privado \"Aires del Llano\"",
-      "description": "Proyecto de ampliación de una vivienda existente mediante la incorporación de un nuevo espacio social. La propuesta integra áreas de encuentro, comedor, living y parrilla, priorizando la relación con el exterior, la iluminación natural y la continuidad entre los distintos sectores.",
-      "year": "2026",
-      "tags": [
-        "Residential Architecture",
-        "Architectural Visualizatio",
-        "3D Rendering",
-        "Interior Design"
-      ],
-      "images": [
-        "images/proyectos/fachada-ps-6.png",
-        "images/proyectos/propuesta-a_page-0001.jpg",
-        "images/proyectos/fachda-2-ps.png",
-        "images/proyectos/interior-ps.png",
-        "images/proyectos/interior-2-ps.png",
-        "images/proyectos/interior-3-ps.png",
-        "images/proyectos/interior-4-ps.png"
       ]
     }
   ],
