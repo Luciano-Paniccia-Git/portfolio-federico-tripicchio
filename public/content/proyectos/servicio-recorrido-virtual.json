@@ -1,0 +1,16 @@
+{
+  "name": "Servicio de Recorrido Virtual",
+  "featured": false,
+  "location": "Argentina",
+  "recorridoVirtual": "EXPLORA EL RECORRIDO VIRTUAL",
+  "tags": [
+    "Recorrido Virtual",
+    "Visualización Arquitectónica",
+    "Experiencia Inmersiva",
+    "Presentación de Proyectos"
+  ],
+  "id": "servicio-recorrido-virtual",
+  "description": "Servicio de recorrido virtual interactivo para proyectos de arquitectura. Una herramienta que permite explorar los espacios de forma inmersiva, recorrer cada ambiente y comprender de manera más clara la distribución, las dimensiones y la relación entre los distintos sectores del proyecto.",
+  "year": "2026",
+  "category": "Visualización Arquitectónica"
+}
