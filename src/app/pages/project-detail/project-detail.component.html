@@ -31,6 +31,14 @@
       <div class="detail-cat">{{ project.category }}</div>
       <h1 class="detail-title">{{ project.name }}</h1>
       <p class="detail-desc">{{ project.description }}</p>
+      <a
+  *ngIf="project.recorridoVirtual"
+  [href]="project.recorridoVirtual"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="virtual-tour-btn">
+  Explorar recorrido virtual →
+</a>
       <div class="detail-meta">
         <span>{{ project.year }}</span>
         <span class="meta-sep">—</span>
