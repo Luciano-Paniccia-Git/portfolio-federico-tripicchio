@@ -18,6 +18,7 @@ export interface ProjectDetail {
   name: string;
   category: string;
   description: string;
+  recorridoVirtual?: string;
   year: string;
   location: string;
   tags: string[];
